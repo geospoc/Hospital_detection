@@ -51,7 +51,7 @@ if __name__ == '__main__':
             count = df_infra.index.to_list()
             #assert mapbox_download(test,MAT)==[200]*test.shape[0]
             ############For parallelization###########
-            Parallelizing the image download with multiple processes
+            #Parallelizing the image download with multiple processes
             with mp.Pool(mp.cpu_count() - 11) as pool:
                 with tqdm(total = df_infra.shape[0], desc = '{} Progress'.format(os.path.splitext(city)[0])) as pbar2:
                     temp = partial(mapbox_download, city = os.path.splitext(city)[0])
