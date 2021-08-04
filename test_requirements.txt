@@ -1,6 +1,0 @@
-pandas==1.1.3
-mercantile==1.1.6
-pytest==6.2.2
-coverage==5.3
-coveralls==3.0.0
-opencv-python=4.5.1.48=pypi_0
