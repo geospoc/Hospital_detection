@@ -23,7 +23,6 @@ jobs:
     - name: Test with coverage
       env:
            MAT: ${{ secrets.MAT }} 
-           #DATA: /home/runner/work/rural-school-mapper/rural-school-mapper/mapbox_test/
       run: |
         pwd
         coverage run -m pytest src/image_download_maharashtra.p       
