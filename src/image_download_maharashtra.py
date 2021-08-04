@@ -60,6 +60,7 @@ if __name__ == '__main__':
                         pbar2.update()
             #os.rename('../inference/infra_info/test_csv/{}'.format(city), '../inference/infra_info/test_csv/downloaded/{}'.format(city))
             assert len(os.listdir('../inference/images/'+city[:-4]+'/'))==len(df_infra)
+            print(len(os.listdir('../inference/images/'+city[:-4]+'/')))
             pbar1.update(1)
 
 
