@@ -43,7 +43,7 @@ def mapbox_download(tile, city):
 if __name__ == '__main__':
     csv_list = [f for f in os.listdir('../inference/infra_info/test_csv/') if f.endswith('.csv')]
     with tqdm(total = len(csv_list), desc = 'No. of cities') as pbar1:
-        for city in csv_list:
+        for city in csv_lis:
             df = pd.read_csv('./infra_info/test_csv/{}'.format(city))
             df_infra = df[df['infra'] == True].reset_index().drop('index', axis = 1)
             xtile = df_infra['xtile'].to_list()
