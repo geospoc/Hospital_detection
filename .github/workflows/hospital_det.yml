@@ -26,7 +26,7 @@ jobs:
            #DATA: /home/runner/work/rural-school-mapper/rural-school-mapper/mapbox_test/
       run: |
         pwd
-        coverage run -m pytest src/image_download_maharashtra.py       
+        coverage run -m pytest src/image_download_maharashtra.p       
     - name: Send report to Coveralls
       env:
           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}       
