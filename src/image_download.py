@@ -71,11 +71,11 @@ def test_download(address):
     test=pd.read_csv(address, index_col = 0).reset_index()
     outpath = address.split('\\')[1].split('.')[0]
     # Insert Mapbox access token below
-    MAT=''
+    MAT=os.getenv('MAT')
     assert mapbox_download(test,MAT, outpath)==[200]*test.shape[0]
     
 if __name__ == '__main__':
-    csv_list = glob.glob('../input/addresses/*.csv')
+    csv_list = glob.glob('../input/addresses/test/*.csv')
     for i in tqdm(range(len(csv_list))):
         test_download(csv_list[i])
 

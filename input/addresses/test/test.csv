@@ -1,0 +1,5 @@
+,place_name,address,place_id,latitude,longitude,types,city
+0,"Sub District Hospital, Achalpur","Road, Bilanpura, Achalpur, Maharashtra 444806, India",ChIJxSnKn6jz1jsRkkj93ol5Wz8,21.2579714,77.5119352,"['hospital', 'health', 'point_of_interest', 'establishment']",Achalpur
+1,Akbari Hospital,"Akbari Chowk,Biyabani, Achalpur, Maharashtra 444806, India",ChIJU4zTeajz1jsRy3oHiP3QCzM,21.2579714,77.5139737,"['hospital', 'health', 'point_of_interest', 'establishment']",Achalpur
+2,Dr. Sami's Clinic,"Lohar Line, Road, Achalpur, Maharashtra 444806, India",ChIJ8-fBSa_z1jsRwRuL3UzKiUU,21.2565103,77.5098941,"['hospital', 'health', 'point_of_interest', 'establishment']",Achalpur
+3,Life Care Hospital,"Road, Bilanpura, Achalpur, Maharashtra 444806, India",ChIJa_i92aHz1jsRKNxS4IO9ChQ,21.267246,77.5107678,"['hospital', 'health', 'point_of_interest', 'establishment']",Achalpur
