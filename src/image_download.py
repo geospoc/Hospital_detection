@@ -68,8 +68,8 @@ def mapbox_download(poi,MAT, outpath):
 
 def test_download():
     # Reading CSV file containing addresses
-    address=glob.glob('../input/addresses/test/*.csv')
-    test=pd.read_csv(address[0], index_col = 0).reset_index()
+    address=os.getcwd()+'/input/addresses/test/test.csv'
+    test=pd.read_csv(address, index_col = 0).reset_index()
     outpath = address.split('/')[1].split('.')[0]
     # Insert Mapbox access token below
     MAT=os.getenv('MAT')
