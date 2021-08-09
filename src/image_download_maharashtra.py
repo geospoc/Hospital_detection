@@ -14,7 +14,7 @@ import cv2
 import multiprocessing as mp
 
 # Mapbox access token
-MAT=os.getenv('MAT')
+MAT=''
 
 # Function for downloading mapbox raster tile
 def mapbox_download(tile, city):
@@ -32,19 +32,12 @@ def mapbox_download(tile, city):
             cv2.imwrite(outpath +str(tile[2])+'.'+str(tile[0]) + '.' + str(tile[1]) + '.png', image)
     except:
         print('Crashed while {0} in {1},{2}'.format(city, tile[0], tile[1]))   
-  
-  
-def test(city,dir_size):
-    assert len(os.listdir('../inference/images/'+city[:-4]+'/'))== len(dir_size)
-
-
-
-
+    
 if __name__ == '__main__':
-    csv_list = [f for f in os.listdir('../inference/infra_info/test_csv/') if f.endswith('.csv')]
+    csv_list = [f for f in os.listdir('../inference/infra_info/') if f.endswith('.csv')]
     with tqdm(total = len(csv_list), desc = 'No. of cities') as pbar1:
         for city in csv_list:
-            df = pd.read_csv('./infra_info/test_csv/{}'.format(city))
+            df = pd.read_csv('./infra_info/{}'.format(city))
             df_infra = df[df['infra'] == True].reset_index().drop('index', axis = 1)
             xtile = df_infra['xtile'].to_list()
             ytile = df_infra['ytile'].to_list()
@@ -55,8 +48,5 @@ if __name__ == '__main__':
                     temp = partial(mapbox_download, city = os.path.splitext(city)[0])
                     for i, _ in enumerate(pool.imap_unordered(temp, iterable = zip(xtile, ytile, count))):
                         pbar2.update()
-            #os.rename('../inference/infra_info/test_csv/{}'.format(city), '../inference/infra_info/downloaded/{}'.format(city))
-            test(city,len(df_infra))
+            os.rename('../inference/infra_info/{}'.format(city), '../inference/infra_info/downloaded/{}'.format(city))
             pbar1.update(1)
-
-    

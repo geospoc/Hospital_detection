@@ -66,18 +66,20 @@ def mapbox_download(poi,MAT, outpath):
     return stat_list    
         
 
-def test_download(address):
+def test_download():
     # Reading CSV file containing addresses
+    address='../input/addresses/test/test.csv'
     test=pd.read_csv(address, index_col = 0).reset_index()
     outpath = address.split('/')[1].split('.')[0]
     # Insert Mapbox access token below
     MAT=os.getenv('MAT')
     assert mapbox_download(test,MAT, outpath)==[200]*test.shape[0]
-    
-if __name__ == '__main__':
-    csv_list = glob.glob('../input/addresses/test/*.csv')
-    for i in tqdm(range(len(csv_list))):
-        test_download(csv_list[i])
+  
+#For multiple csv's  
+# if __name__ == '__main__':
+    # csv_list = glob.glob('../input/addresses/test/*.csv')
+    # for i in tqdm(range(len(csv_list))):
+        # test_download(csv_list[i])
 
 
 
