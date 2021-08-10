@@ -6,7 +6,7 @@ Faculty Mentors: Dr. Manish Gangwar and Dr. Madhu Vishwanathan
 Affiliation: Indian School of Business   
 
 ## Aim & Objective
-To design and develop an intelligent system that identifies hospitals and healthcare facilities from satellite images.
+To design and develop an intelligent system that identifies hospitals and healthcare facilities from satellite images
 
 
 ## Steps involved
