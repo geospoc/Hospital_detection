@@ -5,6 +5,8 @@ Contributors: Dr. Shruti Mantri, Gokul S Kumar and Vishal Sriram
 Faculty Mentors: Dr. Manish Gangwar and Dr. Madhu Vishwanathan    
 Affiliation: Indian School of Business   
 
+[![Coverage Status](https://coveralls.io/repos/github/geospoc/Hospital_detection/badge.svg?branch=main)](https://coveralls.io/github/geospoc/Hospital_detection?branch=main)
+
 ## Aim & Objective
 To design and develop an intelligent system that identifies hospitals and healthcare facilities from satellite images.
 
