@@ -4,7 +4,7 @@
 Contributors: Dr. Shruti Mantri, Gokul S Kumar and Vishal Sriram     
 Faculty Mentors: Dr. Manish Gangwar and Dr. Madhu Vishwanathan    
 Affiliation: Indian School of Business   
-[![Coverage Status](https://coveralls.io/repos/github/shubhamsharma1609/Hospital_detection_from_aerial_images/badge.svg?branch=main)](https://coveralls.io/github/shubhamsharma1609/Hospital_detection_from_aerial_images?branch=main)
+
 ## Aim & Objective
 To design and develop an intelligent system that identifies hospitals and healthcare facilities from satellite images.
 
