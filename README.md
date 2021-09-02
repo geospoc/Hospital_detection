@@ -33,3 +33,14 @@ Use the "requirements.txt" file to clone the environment in which the model eas 
 - **inference**: Contains the geotiff infra maps, tile numbers containing infrastructure, images used for inference & predictions in .npz and geojson format.
 
 
+## FAQs
+
+1. How to clone the repo to start developing?  
+A: ```git clone https://github.com/geospoc/Hospital_detection.git```
+
+2. How to set-up the dev environment?  
+A: Use the "requirements.txt" file to clone the environment in which the model was developed.
+
+3. How to build on the existing work?  
+A: Use the model weights available [here](https://github.com/geospoc/Hospital_detection/tree/main/models) as pre-trained weights and develop new strategies to further improve the predictions.
+
